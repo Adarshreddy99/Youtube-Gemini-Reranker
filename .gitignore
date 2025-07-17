@@ -1,0 +1,12 @@
+# Ignore Python environment and cache
+.venv/
+__pycache__/
+*.pyc
+
+# Ignore dotenv file
+.env
+
+# Streamlit logs and configs
+.streamlit/secrets.toml
+keys/
+utils/
