@@ -17,3 +17,4 @@ beautifulsoup4
 faiss-cpu
 isodate
 dotenv
+openpyxl
