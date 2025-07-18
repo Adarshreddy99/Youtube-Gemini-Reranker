@@ -2,15 +2,10 @@ import os
 import requests
 import isodate
 from datetime import datetime, timedelta, timezone
-from dotenv import load_dotenv
 
-try:
-    import streamlit as st
-    YOUTUBE_API_KEY = st.secrets["YOUTUBE_API_KEY"]
-except Exception:
-    from dotenv import load_dotenv
-    load_dotenv()
-    YOUTUBE_API_KEY = os.getenv("YOUTUBE_API_KEY")
+
+
+YOUTUBE_API_KEY = os.getenv("YOUTUBE_API_KEY")
 
 SEARCH_URL = "https://www.googleapis.com/youtube/v3/search"
 VIDEO_URL = "https://www.googleapis.com/youtube/v3/videos"
