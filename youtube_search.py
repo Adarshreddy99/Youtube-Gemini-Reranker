@@ -2,7 +2,9 @@ import os
 import requests
 import isodate
 from datetime import datetime, timedelta, timezone
+from dotenv import load_dotenv
 
+load_dotenv()
 
 
 YOUTUBE_API_KEY = os.getenv("YOUTUBE_API_KEY")
