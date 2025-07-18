@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: youtube-gemini-app
+    env: python
+    buildCommand: ""
+    startCommand: streamlit run app.py --server.port $PORT
+    envVars:
+      - key: YOUTUBE_API_KEY
+        sync: false
+      - key: GEMINI_API_KEY
+        sync: false
